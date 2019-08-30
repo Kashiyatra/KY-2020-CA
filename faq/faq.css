@@ -1,0 +1,246 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 11 Aug, 2019, 10:33:23 PM
+    Author     : Priyanshu
+*/
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background: url(img/star.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.box {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+  max-width: 190px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.box ul {
+  list-style: none;
+
+}
+
+.box ul li:hover{
+  font-size: 21px;
+}
+.header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 52px;
+  width: 100vw;
+  background-color: #111A22;
+}
+
+.header ul li {
+  float: left;
+}
+
+.header ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0;
+  text-decoration: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #111A22;
+  width:150px;
+  margin: auto;
+}
+
+.header ul li a:hover {
+  background-color: #1C2B38;
+}
+
+.header ul li img {
+  margin-top: 5px;
+}
+
+.heading {
+    font-size: 3.2em;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 10px;
+}
+
+.banner_content {
+ position : relative;
+ padding-top: 5%;
+ padding-bottom: 5%;
+ overflow:hidden;
+ margin-top: 30px;
+ margin-bottom: 20px;
+ color: #000;
+ background-color: rgba(0, 0, 0, 0.3);
+ max-width: 1000px;
+}
+
+.bas {
+  text-align: center;
+  margin-right: 100px;
+}
+
+.ques {
+  color: #f55d8d;
+}
+.banner_content ul {
+    color: #ffffff;
+    text-align: left;
+    margin-left: 8%;
+    margin-right: 4%;
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+
+.banner_content ul li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+.banner_content ul li:hover {
+    color: #ffffff;
+    font-size: 23px;
+}
+
+footer {
+ background-color: #111A22;
+ color:#fff;
+ font-size:14px;
+}
+
+.container {
+ width:90%;
+ margin:auto;
+ overflow:hidden;
+}
+
+@media screen and (max-width: 1200px)
+{
+ .banner_content {
+ position : relative;
+ padding-top: 5%;
+ padding-bottom: 5%;
+ overflow:hidden;
+ margin-top: 30px;
+ margin-bottom: 40px;
+ color: #000;
+ background-color: rgba(0, 0, 0, 0.3);
+ max-width: 800px;
+}
+}
+
+
+@media screen and (max-width: 768px)
+{
+ .banner_content {
+ position : relative;
+ padding-top: 5%;
+ padding-bottom: 5%;
+ overflow:hidden;
+ margin-top: 30px;
+ margin-bottom: 40px;
+ color: #000;
+ background-color: rgba(0, 0, 0, 0.3);
+ max-width: 500px;
+}
+
+.banner_content ul {
+    color: #ffffff;
+    text-align: left;
+    margin-left: 1%;
+    margin-right: 4%;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+
+.banner_content ul li {
+    list-style: none;
+    margin-bottom: 4px;
+}
+
+.banner_content ul li:hover {
+    color: #ffffff;
+    font-size: 19px;
+}
+}
+
+@media screen and (min-width: 360px)
+{
+  .banner_content {
+  position : relative;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  overflow:hidden;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  color: #000;
+  background-color: rgba(0, 0, 0, 0.3);
+  max-width: 725px;
+ }
+}
+
+@media screen and (max-width: 450px)
+{
+ .banner_content {
+ position : relative;
+ padding-top: 5%;
+ padding-bottom: 5%;
+ overflow:hidden;
+ margin-top: 30px;
+ margin-bottom: 40px;
+ color: #000;
+ background-color: rgba(0, 0, 0, 0.3);
+ max-width: 325px;
+}
+}
+
+
+@media screen and (max-height: 560px)
+{
+.banner_content {
+ position : relative;
+ padding-top: 5%;
+ padding-bottom: 5%;
+ overflow:hidden;
+ margin-top: 30px;
+ margin-bottom: 40px;
+ color: #000;
+ background-color: rgba(0, 0, 0, 0.3);
+ max-width: 400px;
+}
+
+.banner_content ul {
+    color: #ffffff;
+    text-align: left;
+    margin-left: 1%;
+    margin-right: 5%;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 480;
+}
+
+.banner_content ul li:hover {
+    color: #ffffff;
+    font-size: 17px;
+}
+}

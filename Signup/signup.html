@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kashiyatra | Sign in/Sign up</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/e30a91579f.js"></script>
+  <link rel="stylesheet" href="design.css">
+  <script>
+function myFunction() {
+	document.getElementById("signup-form").style.display="none";
+	document.getElementById("login-form").style.display="block";
+}
+function yourFunction() {
+	document.getElementById("signup-form").style.display="block";
+	document.getElementById("login-form").style.display="none";
+}
+</script>
+</head>
+<body>
+  <style media="screen">
+  @media screen and (min-width:580px){
+    body{
+      background:url("dark-design-graphic-1820770.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    }
+  </style>
+
+  <div class="container" id="container">
+    <div class="form-container sign-up-container">
+      <form action="#">
+        <h1>Create Account</h1>
+        <div class="social-container">
+          <a href="#" class="social"><i class="fab fa-facebook-f"> </i></a>
+          <a href="#" class="social"><i class="fab fa-google-plus-g"> </i></a>
+          <a href="#" class="social"><i class="fab fa-linkedin-in"> </i></a>
+        </div>
+        <span>or use email for registration</span>
+        <div class="scroll">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <select class="gender" name="option">
+          <option value="" disabled selected>Gender</option>
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+          <option value="3">Don't want to disclose</option>
+        </select>
+        <input type="text" name="" value="" placeholder="college">
+        <select class="Year" name="option">
+          <option value="" disabled selected>Year</option>
+          <option value="1">First</option>
+          <option value="2">Second</option>
+          <option value="3">Third</option>
+          <option value="4">Fourth</option>
+          <option value="5">Fifth</option>
+        </select>
+        <input type="text" name="" value="" placeholder="mobile number">
+        <input type="text" name="" value="" placeholder="referral code">
+        <input type="password" placeholder="password">
+        <input type="password" placeholder="confirm password">
+        </div>
+        <button id="margin" onclick="location.href='#'">Sign Up</button>
+
+      </form>
+    </div>
+    <div class="form-container sign-in-container">
+      <form action="#">
+        <h1>Sign in</h1>
+        <div class="social-container">
+          <a href="#" class="social"><i class="fab fa-facebook-f"> </i></a>
+          <a href="#" class="social"><i class="fab fa-google-plus-g"> </i></a>
+          <a href="#" class="social"><i class="fab fa-linkedin-in"> </i></a>
+        </div>
+        <span>or use your account</span>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="password">
+        <a href="#">Forgot your password?</a>
+        <button onclick="#">Sign In</button>
+      </form>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>Welcome Back!</h1>
+          <p>To keep connected with us please login with your personal info</p>
+          <button class="ghost" id="signIn">Sign In</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Hello, Friend!</h1>
+          <p>Enter your personal data to have a look at Kashiyatra 2020</p>
+          <button class="ghost" id="signUp">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="forms.js">
+
+  </script>
+
+
+
+
+
+  <form action="index.html" class="signup-form" id="signup-form">
+        <h1>Create Account</h1>
+        <div class="social-container">
+        <a href="#" class="social"><i class="fab fa-facebook-f"> </i></a>
+        <a href="#" class="social"><i class="fab fa-google-plus-g"> </i></a>
+        <a href="#" class="social"><i class="fab fa-linkedin-in"> </i></a>
+      </div>
+      <div class="scroll">
+
+        <div class="txtb">
+          <input type="text" name="" value="">
+          <span data-placeholder="Username"></span>
+        </div>
+        <div class="txtb">
+          <input type="email" name="" value="">
+          <span data-placeholder="Email ID"></span>
+        </div>
+        <div class="txtb">
+          <select class="gender" name="option">
+            <option value="" disabled selected>Gender</option>
+            <option class="black"value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Other</option>
+          </select>
+        </div>
+        <div class="txtb">
+          <input type="text" name="" value="">
+          <span data-placeholder="College"></span>
+        </div>
+        <div class="txtb">
+          <select class="Year" name="option">
+            <option value="" disabled selected>Year</option>
+            <option value="1">First</option>
+            <option value="2">Second</option>
+            <option value="3">Third</option>
+            <option value="4">Fourth</option>
+            <option value="5">Fifth</option>
+          </select>
+        </div>
+        <div class="txtb">
+          <input type="text" name="" value="">
+          <span data-placeholder="Mobile number"></span>
+        </div>
+        <div class="txtb">
+          <input type="text" name="" value="">
+          <span data-placeholder="Referral code"></span>
+        </div>
+        <div class="txtb">
+          <input type="password" name="" value="">
+          <span data-placeholder="Password"></span>
+        </div>
+        <div class="txtb">
+          <input type="password" name="" value="">
+          <span data-placeholder="Confirm Password"></span>
+        </div>
+      </div>
+        <input type="submit" name="" class="logbtn" value="Sign up">
+        <div class="bottom-text">
+          Already have an account? <a class='sign' href="#" onclick="myFunction()">login</a>
+        </div>
+      </form>
+
+
+
+<form action="index.html" class="login-form" id="login-form" style="display:none";>
+      <h1>Login</h1>
+      <div class="social-container">
+      <a href="#" class="social"><i class="fab fa-facebook-f"> </i></a>
+      <a href="#" class="social"><i class="fab fa-google-plus-g"> </i></a>
+      <a href="#" class="social"><i class="fab fa-linkedin-in"> </i></a>
+    </div>
+      <div class="txtb">
+        <input type="text" name="" value="">
+        <span data-placeholder="Username"></span>
+      </div>
+
+      <div class="txtb">
+        <input type="password" name="" value="">
+        <span data-placeholder="Password"></span>
+      </div>
+      <input type="submit" name="" class="logbtn" value="login">
+      <div class="bottom-text">
+        Don't have an account? <a class='sign' href="#" onclick="yourFunction()">Sign up</a>
+      </div>
+    </form>
+
+<script type="text/javascript">
+$(".txtb input").on("focus",function(){
+$(this).addClass("focus");
+});
+$(".txtb input").on("blur",function(){
+if($(this).val()=="")
+$(this).removeClass("focus");
+});
+</script>
+</body>
+</html>
