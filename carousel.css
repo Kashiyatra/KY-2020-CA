@@ -189,7 +189,7 @@ background-size: 20px 20px;
                             #boxes .s1{
 
 
-                                transform: translateY(46px) !important;
+                                transform: translateY(0px) !important;
                             }
                           }
 
@@ -198,7 +198,7 @@ background-size: 20px 20px;
                 and (orientation:portrait){
                   #boxes .box{
                     margin-top: 100px;
-
+                    zoom:0.9;
                     height: 30vh;
                   }
                   #boxes h3{
