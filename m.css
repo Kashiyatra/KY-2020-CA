@@ -3,7 +3,12 @@
 font-family: 'GOTHAM-MEDIUM';
 src: local('GOTHAM-MEDIUM'), url('GOTHAM-MEDIUM.TTF') format('TTF');
 }
-
+body::-webkit-scrollbar { width: 0 !important; }
+nav::-webkit-scrollbar { width: 0 !important; }
+body { overflow: -moz-scrollbars-none; }
+nav{ overflow: -moz-scrollbars-none; }
+body { -ms-overflow-style: none; }
+nav { -ms-overflow-style: none; }
 /* CSS variables */
 :root {
   --primary-color: 	#501628;
@@ -58,7 +63,7 @@ a#Overviews{
   display: none;
 }
 #music{
-
+  box-sizing: border-box;
   background-image: linear-gradient(316deg, rgba(165,98,82,0.2) 0%, rgba(79,14,80,0.2) 74%);
 
   /* background: url("./img/2357032.jpg") no-repeat center/cover; */
@@ -83,6 +88,7 @@ a#Overviews{
 } */
 /* Section */
 .section{
+  box-sizing: border-box;
   padding: 2rem 0;
 
 }
@@ -113,7 +119,7 @@ a#Overviews{
 @media screen and  (min-width: 760px){
 
   #music{
-    min-height: 100vh;
+    height: 100%;
   }
   /* #music h2{
 
@@ -163,7 +169,7 @@ a#Overviews{
     margin: 0 25px 0px 25px;
   }
   #boxes{
-  min-height: 100vh;
+  height: 100%;
   margin-top: 0px;
   box-sizing: border-box;
   }
@@ -274,12 +280,25 @@ i.fa-quote-left{
 #showcase{
   margin: 0;
   padding: 0;
-  background: url(./img/lapt.jpg) no-repeat top/cover;
+  background: url(./img/Bill121.png) center/cover no-repeat , url(./img/BillBoard.jpg) no-repeat top/cover;
+  background-size: auto 90% , cover;
   width: 100%;
   box-sizing: content-box;
   position: relative;
   overflow-y: hidden;
   overflow-x: hidden;
+}
+@media screen and (min-height:1023px)
+              and (max-height:1370px)
+              and (orientation:portrait){
+               #showcase{
+
+                 background:url(./img/lapt.jpg) no-repeat top/cover !important;
+
+               }
+               .arrows {
+                 bottom: 10vh !important;
+               }
 }
 #showcase .container{
   margin-top: 25vh;
@@ -314,7 +333,7 @@ footer .footer-cols ul li:first-child{
 }
 footer .footer-bottom{
   background-color: #151618;
-  padding: 1rem;
+  padding: .5rem;
 }
 footer .footer-rows{
   display: none;
